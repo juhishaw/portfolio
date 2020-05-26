@@ -1,0 +1,151 @@
+@import "../assets/variables";
+@import "../assets/mixins";
+@import "../assets/typography";
+
+.header-wrapper {
+  background: $black;
+  height: 100vh;
+  padding: 2%;
+  .logo {
+    background-image: url("../../images/logo.png");
+    height: 18%;
+    background-repeat: no-repeat;
+    width: 5%;
+    background-size: contain;
+    background-position: top left;
+  }
+  .content {
+    @include d-flex {
+      justify-content: getJustify(sb);
+      align-items: getAlign(fs);
+      height: 80%;
+    }
+    .icons-grp {
+      width: fit-content;
+      padding: 15px;
+      height: 100%;
+      @include d-flex {
+        justify-content: getJustify(fs);
+        align-items: getAlign(fs);
+      }
+      flex-direction: column;
+      position: relative;
+      .divider {
+        &::before {
+          content: "";
+          height: 34vh;
+          border: 1px solid $placeholder;
+          width: 1px;
+          background: $placeholder;
+          position: absolute;
+        }
+      }
+      &.social-set {
+        .divider {
+          &::before {
+            left: 30px;
+          }
+        }
+        .icon {
+          left: 18px;
+          span {
+            left: 20px;
+          }
+          &:nth-child(2) {
+            bottom: 38%;
+          }
+          &:nth-child(3) {
+            bottom: 26%;
+          }
+          &:nth-child(4) {
+            bottom: 14%;
+          }
+          &:nth-child(5) {
+            bottom: 3%;
+          }
+        }
+      }
+      &.section-set {
+        .divider {
+          &::before {
+            right: 30px;
+            bottom: 0;
+          }
+        }
+        .icon {
+          right: 18px;
+          span {
+            right: 20px;
+          }
+          &:nth-child(1) {
+            top: 6%;
+          }
+          &:nth-child(2) {
+            top: 18%;
+          }
+          &:nth-child(3) {
+            top: 30%;
+          }
+          &:nth-child(4) {
+            top: 42%;
+          }
+        }
+      }
+      .icon {
+        box-shadow: 0 0 0 2px $placeholder;
+        position: absolute;
+
+        transform: rotate(45deg);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+        &:hover {
+          box-shadow: 0 0 0 2px $lg-color;
+          span {
+            color: $golden;
+          }
+        }
+        span {
+          transition: color 0.5s ease;
+          color: $icon;
+          font-size: 18px;
+          transform: rotate(-45deg);
+          display: inline-block;
+        }
+      }
+    }
+    .intro-section {
+      width: 80%;
+      .text {
+        .white-txt {
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 42px;
+          color: $white;
+          .red {
+            color: #dc143c;
+          }
+          &:not(:last-child) {
+            margin: 8px 0;
+          }
+        }
+        .small-txt {
+          color: $light;
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+      .buttons {
+        button {
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}

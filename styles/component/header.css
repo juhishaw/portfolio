@@ -1,0 +1,125 @@
+/*Basic text*/
+/*Component color*/
+/*Buttons*/
+/*Grey shades*/
+/*Input variables*/
+/*Basic text*/
+/*Component color*/
+/*Buttons*/
+/*Grey shades*/
+/*Input variables*/
+/*Basic text*/
+/*Component color*/
+/*Buttons*/
+/*Grey shades*/
+/*Input variables*/
+/*Basic text*/
+/*Component color*/
+/*Buttons*/
+/*Grey shades*/
+/*Input variables*/
+.labels {
+  font-size: 12px;
+  color: #868ea3 !important;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0px; }
+
+.header-wrapper {
+  background: #000;
+  height: 100vh;
+  padding: 2%; }
+  .header-wrapper .logo {
+    background-image: url("../../images/logo.png");
+    height: 18%;
+    background-repeat: no-repeat;
+    width: 5%;
+    background-size: contain;
+    background-position: top left; }
+  .header-wrapper .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 80%; }
+    .header-wrapper .content .icons-grp {
+      width: fit-content;
+      padding: 15px;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      position: relative; }
+      .header-wrapper .content .icons-grp .divider::before {
+        content: "";
+        height: 34vh;
+        border: 1px solid #5c648a;
+        width: 1px;
+        background: #5c648a;
+        position: absolute; }
+      .header-wrapper .content .icons-grp.social-set .divider::before {
+        left: 30px; }
+      .header-wrapper .content .icons-grp.social-set .icon {
+        left: 18px; }
+        .header-wrapper .content .icons-grp.social-set .icon span {
+          left: 20px; }
+        .header-wrapper .content .icons-grp.social-set .icon:nth-child(2) {
+          bottom: 38%; }
+        .header-wrapper .content .icons-grp.social-set .icon:nth-child(3) {
+          bottom: 26%; }
+        .header-wrapper .content .icons-grp.social-set .icon:nth-child(4) {
+          bottom: 14%; }
+        .header-wrapper .content .icons-grp.social-set .icon:nth-child(5) {
+          bottom: 3%; }
+      .header-wrapper .content .icons-grp.section-set .divider::before {
+        right: 30px;
+        bottom: 0; }
+      .header-wrapper .content .icons-grp.section-set .icon {
+        right: 18px; }
+        .header-wrapper .content .icons-grp.section-set .icon span {
+          right: 20px; }
+        .header-wrapper .content .icons-grp.section-set .icon:nth-child(1) {
+          top: 6%; }
+        .header-wrapper .content .icons-grp.section-set .icon:nth-child(2) {
+          top: 18%; }
+        .header-wrapper .content .icons-grp.section-set .icon:nth-child(3) {
+          top: 30%; }
+        .header-wrapper .content .icons-grp.section-set .icon:nth-child(4) {
+          top: 42%; }
+      .header-wrapper .content .icons-grp .icon {
+        box-shadow: 0 0 0 2px #5c648a;
+        position: absolute;
+        transform: rotate(45deg);
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .header-wrapper .content .icons-grp .icon:not(:last-child) {
+          margin-bottom: 5px; }
+        .header-wrapper .content .icons-grp .icon:hover {
+          box-shadow: 0 0 0 2px #1c1406; }
+          .header-wrapper .content .icons-grp .icon:hover span {
+            color: #b08339; }
+        .header-wrapper .content .icons-grp .icon span {
+          transition: color 0.5s ease;
+          color: #a6b1c8;
+          font-size: 18px;
+          transform: rotate(-45deg);
+          display: inline-block; }
+    .header-wrapper .content .intro-section {
+      width: 80%; }
+      .header-wrapper .content .intro-section .text .white-txt {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 42px;
+        color: #fff; }
+        .header-wrapper .content .intro-section .text .white-txt .red {
+          color: #dc143c; }
+        .header-wrapper .content .intro-section .text .white-txt:not(:last-child) {
+          margin: 8px 0; }
+      .header-wrapper .content .intro-section .text .small-txt {
+        color: #868ea3;
+        font-size: 18px;
+        line-height: 28px; }
+      .header-wrapper .content .intro-section .buttons button:not(:last-child) {
+        margin-right: 15px; }
